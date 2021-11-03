@@ -17,7 +17,7 @@ export const FormStep3 = () => {
                 payload: 3
             });
         }
-    }, []);
+    }, [dispatch, history, state.name]);
 
     const handleNextStep = () => {
         if(state.email !== '' && state.github !== '') {
